@@ -21,11 +21,4 @@ describe Player do
       expect { ruzeka.receive_damage }.to change{ ruzeka.hit_points }.by -10
     end
   end
-
-  context '#attack' do
-    it 'damages the player' do
-      expect(joe).to receive(:receive_damage)
-      ruzeka.attack(joe)
-    end
-  end
 end 
