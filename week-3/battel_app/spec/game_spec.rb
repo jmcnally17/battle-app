@@ -3,9 +3,7 @@ require_relative '../lib/game'
 describe Game do
   let(:ruzeka) { double ('player') }
   let(:joe) { double ('player') }
-  let(:player_class_double_1) { double 'player_class', new: ruzeka }
-  let(:player_class_double_2) { double 'player_class', new: joe }
-  subject(:game) { Game.new(ruzeka, joe, player_class_double_1, player_class_double_2) }
+  subject(:game) { Game.new(ruzeka, joe) }
   
   context '#creation' do
     it 'has two players' do

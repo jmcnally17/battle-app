@@ -3,5 +3,4 @@ def sign_in_and_play
   fill_in :player_1_name, with: 'Ruzeka'
   fill_in :player_2_name, with: 'Joe'
   click_button 'Submit'
-
 end
